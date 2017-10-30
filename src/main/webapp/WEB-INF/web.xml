@@ -6,6 +6,10 @@
 
     <display-name>SimpleJ2EEProject</display-name>
 
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>myServlet</welcome-file>-->
+    <!--</welcome-file-list>-->
+
     <listener>
         <listener-class>
             com.teaminternational.web.ContextListener
@@ -13,11 +17,11 @@
     </listener>
 
     <servlet>
-        <servlet-name>newServlet</servlet-name>
-        <servlet-class>com.teaminternational.web.NewServlet</servlet-class>
+        <servlet-name>myServlet</servlet-name>
+        <servlet-class>com.teaminternational.web.MyServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>newServlet</servlet-name>
+        <servlet-name>myServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
